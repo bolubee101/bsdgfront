@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Covid Impact Estimator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="This is a Covid Impact Estimator"/>
+<style>
+
+</style>
+</head>
+<body>
+
+<form action="/">
+  <div class="form-style-5">
+    <h1>Estimate required imput</h1>
+    <p>Please fill in this form</p>
+    <hr>
+
+    <label for="population"><b>population</b></label>
+    <input data-population="population" type="number" placeholder="Input Population number" id="population" required>
+
+    <label for="timeToElapse"><b>timeToElapse</b></label>
+    <input data-time-to-elapse="timeToElapse" type="number" placeholder="time To Elapse" id="timeToElapse" required>
+
+    <label for="reportedCases"><b>reported cases</b></label>
+    <input data-reported-cases="reportedCases" type="number" placeholder="number of reported cases" id="reportedCases" required>
+
+    <label for="totalHospitalBeds"><b>number of hospital beds</b></label>
+    <input data-total-hospital-beds="totalHospitalBeds"type="number" placeholder="number of available hospital beds" id="totalHospitalBeds" required>
+
+    <label for="periodType"><b>period type</b></label>
+    <select data-period-type="periodType" id="periodType">
+        <option value="days">days</option>
+        <option value="weeks">weeks</option>
+        <option value="months">months</option>
+      </select>
+
+    <hr>
+    <label for="submit"><b></b></label>
+    <button data-go-estimate="submit" type="submit" id="submit" >Register</button>
+  </div>
+  
+</form>
+
+</body>
+</html>
